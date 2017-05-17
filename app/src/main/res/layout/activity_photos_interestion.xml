@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flush_one"
+    tools:context="com.mxmh.crystallization.acyivity.StartUpFlushActivity">
+
+    <ImageView
+        android:id="@+id/iv_photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/gaoxiao1" />
+
+    <ImageView
+        android:id="@+id/iv_back_photos"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_action_arrow_left" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/bt_up_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/change_photos"
+            android:text="上一张" />
+
+        <Button
+            android:id="@+id/bt_next_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bt_up_phone"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/change_photos"
+            android:text="下一张" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
